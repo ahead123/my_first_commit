@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Navbar</title>
+</head>
+<style type="text/css">
+	body {
+		margin: 0;
+	}
+	header {
+		width: 100%;
+		height: 58px;
+		background: DimGray;
+		box-sizing: border-box;
+	}
+	.content-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		background: #27ae60;
+		height: 50px;
+		padding-top: 1%;
+	}
+	.content-wrapper:hover {
+		background: #7f8c8d;
+	}
+
+	a {
+		text-decoration: none;
+		color: #ecf0f1;
+		font-weight: 100;
+		font-family: helvetica;
+		display: inline-block;
+		margin-left: 17%;
+	}
+	a:hover {
+		color: #2980b9;
+		font-weight: 300;
+		border-bottom: 2px solid #2980b9;
+		padding-bottom: 5px;
+	}
+	#box, #box-1, #box-2 {
+		float: left;
+		height: 1700px;
+		box-sizing: border-box;
+		margin: 1%;
+	}
+	#box {
+		width: 23%;
+		background: #2ecc71;
+	}
+	#box-1 {
+		width: 48%;
+		background: #2980b9;
+	}
+	#box-2 {
+		width: 23%;
+		background: #2ecc71;
+	}
+	p {
+		text-align: center;
+		color: #ecf0f1;
+		font-weight: 100;
+		font-family: helvetica;
+	}
+	p:hover {
+		color: #2980b9;
+		font-weight: 300;
+	}
+</style>
+
+<body>
+<header>
+	<section class="content-wrapper">
+		<a href="#"><span>Home</span></a>
+		<a href="#"><span>About Me</span></a>
+		<a href="#"><span>Portfolio</span></a>
+		<a href="#"><span>Contact</span></a>
+	</section>
+</header>
+<div id="box">
+	<section class="content-wrapper">
+		<p>Links</p>
+	</section>
+</div>
+<div id="box-1">
+	<section class="content-wrapper">
+		<p>My Blog!</p>
+	</section>
+</div>
+<div id="box-2">
+	<section class="content-wrapper">
+		<p>Social</p>
+	</section>
+</div>
+
+</body>
+</html>
