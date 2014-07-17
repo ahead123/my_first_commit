@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href='style.css'/>
+	<script src='script.js'></script>
+	<title>Art's Color Picker</title>
+</head>
+<style>
+body {
+    width: 100%;
+    margin: 0;
+	background: #7f8c8d;
+}
+#head {
+    text-align: center;
+    font-family: helvetica;
+	background: #e67e22;
+}
+#intro {
+    color: #7f8c8d;   
+	background: #2c3e50;
+	width: 40%;
+	margin: 0 auto; 
+	padding: 1%;
+	border-bottom: 5px solid;
+}
+#sintro {
+    color: #2980b9;
+    border-bottom: 5px solid; 
+    padding: 1%;
+	background: #ecf0f1;
+	width: 15%;
+	margin: 0 auto;
+}
+#big-square {
+    height: 140px;
+    width: 140px;
+    border: 4px solid #bdc3c7;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 4%;
+    background-color: #bdc3c7; 
+}
+
+#lsq-1, #lsq-2, #lsq-3, #lsq-4, #lsq-5 {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #bdc3c7;
+    float: left;
+    margin-left: 14.4%;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    border-radius: 50%;
+}
+#lsq-1 {
+background: #1abc9c;    
+}
+#lsq-2 {
+background: #f1c40f;    
+}
+#lsq-3 {
+background: #3498db;    
+}
+#lsq-4 {
+background: #e74c3c;    
+}
+#lsq-5 {
+background: #9b59b6;    
+}
+#lsq-6 {
+    height: 50px;
+    width: 50px;
+    border: 3px solid #bdc3c7;
+    clear: both;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+}
+p {
+    color: #ecf0f1;    
+}
+#content {
+	width: 90%;
+}
+</style>
+
+
+
+<body>
+
+<header id="head">
+<h2 id="intro">THIS IS A FLAT DESIGN COLOR PICKER</h2>
+<h3 id="sintro">So pick a color!</h3>
+</header>
+<div id="big-square"></div>
+<br>
+<div id="content">
+<div id="lsq-1" onclick="changeColorTeal()"></div>
+<div id="lsq-2" onclick="changeColorYellow()"></div>
+<div id="lsq-3" onclick="changeColorBlue()"></div>
+<div id="lsq-4" onclick="changeColorRed()"></div>
+<div id="lsq-5" onclick="changeColorPurple()"></div>
+</div>
+<footer>
+
+<div id="lsq-6" onclick="resetColor()"><p>reset</p></div>
+
+</footer>
+
+</body>
+
+<script type="text/javascript">
+function changeColorTeal(){
+document.getElementById('big-square').style.backgroundColor='#16a085';
+document.getElementById('intro').style.color='#16a085';
+document.getElementById('sintro').style.color='#16a085';
+document.getElementById('head').style.backgroundColor='#16a085';
+}
+function changeColorYellow(){
+document.getElementById('big-square').style.backgroundColor='#f1c40f';
+document.getElementById('intro').style.color='#f1c40f';
+document.getElementById('sintro').style.color='#f1c40f';
+document.getElementById('head').style.backgroundColor='#f1c40f';
+}
+function changeColorBlue(){
+document.getElementById('big-square').style.backgroundColor='#3498db';
+document.getElementById('intro').style.color='#3498db';
+document.getElementById('sintro').style.color='#3498db';
+document.getElementById('head').style.backgroundColor='#3498db';
+}
+function changeColorRed(){
+document.getElementById('big-square').style.backgroundColor='#e74c3c';
+document.getElementById('intro').style.color='#e74c3c';
+document.getElementById('sintro').style.color='#e74c3c';
+document.getElementById('head').style.backgroundColor='#e74c3c';
+
+}
+function changeColorPurple(){
+document.getElementById('big-square').style.backgroundColor='#9b59b6';
+document.getElementById('intro').style.color='#9b59b6';
+document.getElementById('sintro').style.color='#9b59b6';
+document.getElementById('head').style.backgroundColor='#9b59b6';
+
+}
+function resetColor(){
+document.getElementById('big-square').style.backgroundColor='white';
+document.getElementById('head').style.backgroundColor='#e67e22';
+document.getElementById('intro').style.color='#7f8c8d';
+document.getElementById('sintro').style.color='#2980b9';  
+alert("Thanks for playing!!!");
+}
+
+</script>
+</html>
